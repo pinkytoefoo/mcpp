@@ -1,16 +1,16 @@
 #pragma once
 
-#include <imgui.h>
+#include "gfx/window.hpp"
 
 class Gui
 {
 public:
-    Gui();
+    Gui(Window& w);
     ~Gui();
 
-    void Init();
-    void Run();
-    void Cleanup();
+    void BeginFrame();
+    void EndFrame();
+
 private:
-    ImGuiIO& m_Io;
+    bool m_ShowDemo = true;
 };
