@@ -14,6 +14,6 @@ struct GladLoader
         glfwMakeContextCurrent(window.handle());
 
         if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-            throw std::runtime_error("Failed to load GLAD");
+            throw std::runtime_error("failed to load glad!");
     }
 };

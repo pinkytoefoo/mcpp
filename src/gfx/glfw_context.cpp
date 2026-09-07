@@ -16,9 +16,3 @@ GlfwContext::~GlfwContext()
 {
     glfwTerminate();
 }
-
-GlfwContext& GlfwContext::GetInstance()
-{
-    static GlfwContext instance;
-    return instance;
-}
